@@ -6,7 +6,7 @@
             "CameraInit": "12.0",
             "CopyFiles": "1.3",
             "ImageSegmentationSam3": "0.1",
-            "Sam3dObjects": "1.0"
+            "Sam3dObjects": "1.1"
         },
         "template": true
     },
@@ -38,7 +38,7 @@
                 0
             ],
             "inputs": {
-                "inputImages": "{ImageSegmentationSam3_1.input}",
+                "input": "{ImageSegmentationSam3_1.input}",
                 "maskFolder": "{ImageSegmentationSam3_1.output}",
                 "maskExtension": "exr"
             }
