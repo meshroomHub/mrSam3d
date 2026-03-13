@@ -85,7 +85,6 @@ class Sam3dBody(desc.Node):
             description="Reconstructed 3d mesh render.",
             semantic="image",
             value="{nodeCacheFolder}/<FILESTEM>_overlay.png",
-            group="",
         ),
         desc.File(
             name="bbox",
@@ -93,7 +92,6 @@ class Sam3dBody(desc.Node):
             description="Bounding boxes used by sam3d.",
             semantic="image",
             value="{nodeCacheFolder}/<FILESTEM>_bbox.png",
-            group="",
         ),
     ]
 

@@ -5,7 +5,7 @@
         "nodesVersions": {
             "CameraInit": "12.0",
             "CopyFiles": "1.3",
-            "ImageSegmentationSam3": "0.1",
+            "ImageSegmentationSam3": "1.0",
             "Sam3dBody": "1.1"
         },
         "template": true
