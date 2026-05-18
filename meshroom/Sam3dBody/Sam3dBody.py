@@ -95,7 +95,7 @@ class Sam3dBody(desc.Node):
         ),
     ]
 
-    def preprocess(self, node):
+    def get_image_paths(self, node):
         self.image_paths = get_image_paths_list(node.input.value)
         if len(self.image_paths) == 0:
             raise FileNotFoundError(f'No image files found in {node.input.value}')
@@ -114,6 +114,7 @@ class Sam3dBody(desc.Node):
             if not chunk.node.input.value:
                 chunk.logger.warning('No input sfmData given.')
 
+            self.get_image_paths(chunk.node)
             chunk_image_paths = self.image_paths[chunk.range.start:chunk.range.end]
 
             device = "cuda"
